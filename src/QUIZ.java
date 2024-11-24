@@ -2,8 +2,11 @@ public class QUIZ {
     public static void main(String[] args) {
 
         Cabeçalho nome_da_facul = new Cabeçalho();
+        Cabeçalho professor_nome = new Cabeçalho();
+        professor_nome.nome_do_professor = "Professor: Brenno Pimenta";
         nome_da_facul.nome_da_faculdade = "UNIFAM";
         System.out.println(nome_da_facul);
+        System.out.println(professor_nome);
 
         int contador = 0;
         double taxa_de_acerto;

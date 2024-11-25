@@ -96,6 +96,65 @@ public class QUIZ {
             contador = contador + 1;
         taxa_de_acerto = (contador * 100) /15;
 
+        Questao q5 = new Questao();
+        q5.pergunta = "Quem é considerado o inventor do primeiro automóvel movido a gasolina?";
+        q5.opcaoA = "A) Henry Ford";
+        q5.opcaoB = "B) Karl Benz";
+        q5.opcaoC = "C) Nikolaus Otto";
+        q5.opcaoD = "D) Gottlieb Daimler";
+        q5.opcaoE = "E) Ferdinand Porsche";
+        q5.correta = "B";
+
+        q5.escrevaQuestao();
+        // lendo a resposta do usuario
+        String respostaUsuario5 = q5.leiaResposta();
+
+
+        q5.isCorreta(respostaUsuario5);
+        if (q5.isCorreta(respostaUsuario5))
+            contador = contador + 1;
+        taxa_de_acerto = (contador * 100) /15;
+
+        Questao q6 = new Questao();
+        q6.pergunta = "Em que ano foi lançado o Ford Model T, o primeiro carro produzido em massa?";
+        q6.opcaoA = "A) 1915";
+        q6.opcaoB = "B) 1920";
+        q6.opcaoC = "C) 1895";
+        q6.opcaoD = "D) 1908";
+        q6.opcaoE = "E) 1910";
+        q6.correta = "D";
+
+        q6.escrevaQuestao();
+        // lendo a resposta do usuario
+        String respostaUsuario6 = q6.leiaResposta();
+
+
+        q6.isCorreta(respostaUsuario6);
+        if (q6.isCorreta(respostaUsuario6))
+            contador = contador + 1;
+        taxa_de_acerto = (contador * 100) /15;
+
+
+        Questao q7 = new Questao();
+        q7.pergunta = "Qual foi o primeiro carro esportivo da Ferrari?";
+        q7.opcaoA = "A) Ferrari 250 GTO";
+        q7.opcaoB = "B) Ferrari Dino";
+        q7.opcaoC = "C) Ferrari Testarossa";
+        q7.opcaoD = "D) Ferrari LaFerrari";
+        q7.opcaoE = "E) Ferrari 125 S";
+        q7.correta = "E";
+
+        q7.escrevaQuestao();
+        // lendo a resposta do usuario
+        String respostaUsuario7 = q7.leiaResposta();
+
+
+        q7.isCorreta(respostaUsuario7);
+        if (q7.isCorreta(respostaUsuario7))
+            contador = contador + 1;
+        taxa_de_acerto = (contador * 100) /15;
+
+
        // System.out.println("parebéns você ja tem um acerto de " + contador);
         // System.out.println(" taxa de acerto em "+taxa_de_acerto+"%");
 

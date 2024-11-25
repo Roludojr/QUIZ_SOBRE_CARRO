@@ -53,14 +53,51 @@ public class QUIZ {
 
 
         q2.isCorreta(respostaUsuario2);
-        if (q1.isCorreta(respostaUsuario2))
+        if (q2.isCorreta(respostaUsuario2))
             contador = contador+ 1;
+
+
+        Questao q3 = new Questao();
+        q3.pergunta = "Qual é o nome do sistema que impede que as rodas do carro patinem ao arrancar?";
+        q3.opcaoA = "A) ABS";
+        q3.opcaoB = "B) Controle de tração";
+        q3.opcaoC = "C) Amortecedor";
+        q3.opcaoD = "D) Transmissão";
+        q3.opcaoE = "E) Suspensão";
+        q3.correta = "B";
+
+        q3.escrevaQuestao();
+        // lendo a resposta do usuario
+        String respostaUsuario3 = q3.leiaResposta();
+
+
+        q3.isCorreta(respostaUsuario3);
+        if (q3.isCorreta(respostaUsuario3))
+            contador = contador + 1;
         taxa_de_acerto = (contador * 100) /15;
 
 
-        // printando a tela
-        System.out.println("parebéns você ja tem um acerto de " + contador);
-        System.out.println(" taxa de acerto em "+taxa_de_acerto+"%");
+        Questao q4 = new Questao();
+        q4.pergunta = "Qual é a principal função do diferencial em um veículo?";
+        q4.opcaoA = "A) Distribuir a força igualmente entre as rodas.";
+        q4.opcaoB = "B) Reduzir o desgaste dos pneus.";
+        q4.opcaoC = "C) Aumentar a potência do motor.";
+        q4.opcaoD = "D) Permitir que as rodas girem a velocidades diferentes em curvas.";
+        q4.opcaoE = "E) Melhorar a aerodinâmica do carro.";
+        q4.correta = "B";
+
+        q4.escrevaQuestao();
+        // lendo a resposta do usuario
+        String respostaUsuario4 = q4.leiaResposta();
+
+
+        q4.isCorreta(respostaUsuario4);
+        if (q4.isCorreta(respostaUsuario4))
+            contador = contador + 1;
+        taxa_de_acerto = (contador * 100) /15;
+
+       // System.out.println("parebéns você ja tem um acerto de " + contador);
+        // System.out.println(" taxa de acerto em "+taxa_de_acerto+"%");
 
     }
 }
